@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
+"""Ridin Bareback"""
 
 
 def mat_mul(mat1, mat2):
-    '''Perform matrix multiplication and return the result as a new matrix.'''
+    """Perform matrix multiplication and return the result as a new matrix."""
     rows1, cols1 = len(mat1), len(mat1[0])
     rows2, cols2 = len(mat2), len(mat2[0])
     if cols1 != rows2:
