@@ -3,7 +3,8 @@
 
 def cat_matrices2D(mat1, mat2, axis=0):
     """
-    Concatenate two matrices along a specific axis and return the result as a new matrix.
+    Concatenate two matrices along a specific axis and
+    return the result as a new matrix.
     """
     rows1, cols1 = len(mat1), len(mat1[0])
     rows2, cols2 = len(mat2), len(mat2[0])
