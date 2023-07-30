@@ -1,12 +1,8 @@
 #!/usr/bin/env python3
-
-
-import numpy as np
+"""I will use my scale"""
 
 
 def np_shape(matrix):
-    """
-    Calculate the shape of a numpy.ndarray and
-    return it as a tuple of integers.
-    """
+    """Calculate the shape of a numpy.ndarray and
+    return it as a tuple of integers."""
     return matrix.shape
