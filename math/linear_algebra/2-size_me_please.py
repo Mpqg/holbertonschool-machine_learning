@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 
 def matrix_shape(matrix):
-    """
-    OK
-    """
+"""OK"""
     shape = []
     while isinstance(matrix, list):
         shape.append(len(matrix))
