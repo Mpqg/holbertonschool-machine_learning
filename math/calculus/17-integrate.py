@@ -3,13 +3,20 @@
 
 
 def poly_integral(poly, C=0):
-    """integrate"""
-    if not isinstance(poly, list) or not all(isinstance(coeff, (int, float))
-                                             for coeff in poly):
+    """return integrals"""
+    if type(poly) != list or len(poly) < 1:
         return None
-    if not isinstance(C, int):
+    if type(C) != int and type(C) != float:
         return None
-    integral = [coeff / (power + 1) if power > 0 else coeff for power,
-                coeff in enumerate(poly)]
-    integral.insert(0, C)
-    return integral
+    if poly == [0]:
+        return [C]
+    result = all(type(s) in [int, float] for s in poly)
+    if not result:
+        return None
+    poly.insert(0, C)
+    for x in range(1, len(poly)):
+        poly[x] = poly[x] / x
+    for y in range(len(poly)):
+        if poly[y] % 1 == 0:
+            poly[y] = int(poly[y])
+    return poly
