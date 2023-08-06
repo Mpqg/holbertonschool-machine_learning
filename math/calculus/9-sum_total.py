@@ -7,9 +7,9 @@ import sys
 
 def summation_i_squared(n):
     """Summation"""
-    recLimit = sys.getrecursionlimit()
+    sys.setrecursionlimit(2000)
     if not isinstance(n, int) or n <= 0:
         return None
-    if n == 1 or n <= recLimit:
+    if n == 1:
         return 1
     return n ** 2 + summation_i_squared(n - 1)
