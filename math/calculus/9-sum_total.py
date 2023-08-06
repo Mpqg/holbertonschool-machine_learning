@@ -2,10 +2,6 @@
 """Summation"""
 
 
-import sys
-sys.setrecursionlimit(10**6)
-
-
 def summation_i_squared(n):
     """Summation"""
 
@@ -13,4 +9,4 @@ def summation_i_squared(n):
         return None
     if n == 1:
         return 1
-    return n ** 2 + summation_i_squared(n - 1)
+    return sum(map(lambda n: pow(n, 2), range(n + 1)))
