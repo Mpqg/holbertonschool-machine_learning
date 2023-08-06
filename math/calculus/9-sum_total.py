@@ -3,7 +3,7 @@
 
 
 def summation_i_squared(n):
-    """Summation of i sq"""
+    """Summation"""
     if not isinstance(n, int) or n <= 0:
         return None
     if n == 1:
