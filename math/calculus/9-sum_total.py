@@ -3,11 +3,11 @@
 
 
 import sys
-
+sys.setrecursionlimit(10**6)
 
 def summation_i_squared(n):
     """Summation"""
-    sys.setrecursionlimit(2000)
+    
     if not isinstance(n, int) or n <= 0:
         return None
     if n == 1:
