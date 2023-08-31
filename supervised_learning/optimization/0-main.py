@@ -12,4 +12,3 @@ if __name__ == '__main__':
     m, s = normalization_constants(X)
     print(m)
     print(s)
-    
